@@ -1,0 +1,12 @@
+# NAS 上的 go2rtc（docker）配置示例：让米家云摄像头在 HA 里出"真·实时"画面
+# 小米账号登录（token 由 go2rtc WebUI 登录后自动写入，也可 POST /api/config 整体覆盖）
+xiaomi:
+  "${XIAOMI_UID}": "V1:***<YOUR_XIAOMI_TOKEN>***"
+
+streams:
+  # 原始流（H265 1080p）——取静帧用它
+  micam1:
+    - xiaomi://${XIAOMI_UID}:cn@${CAMERA_IP}?did=${CAMERA_DID}&model=chuangmi.camera.ipc019
+  # H265 → H264 转码（浏览器 / HA HLS / HomeKit 只吃 H264）；软件转码，按需启动
+  micam1_h264:
+    - ffmpeg:micam1#video=h264#width=1280#height=720
