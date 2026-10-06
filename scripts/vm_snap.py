@@ -10,7 +10,7 @@
 """
 import base64, json, os, sys, time, urllib.request, urllib.error
 
-VM = os.environ.get("VM_NAME", "htnouvvf")          # libvirt 域名（随机串），/domain/list 里的 name
+VM = os.environ.get("VM_NAME", "${VM_NAME}")          # libvirt 域名（随机串），/domain/list 里的 name
 HA = os.environ.get("HA_BASE", "http://${HA_HOST}")
 BASE = "http://localhost:5666/vm/api/v1"
 S = os.path.expanduser("~/.config/trim-cli/secure")

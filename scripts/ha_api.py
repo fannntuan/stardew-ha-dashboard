@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 
 BASE = os.environ.get("HA_BASE", "http://${HA_HOST}")  # HA 实际在 80 端口
-USER = os.environ.get("HA_USER", "zhangke")
+USER = os.environ.get("HA_USER", "${HA_USER}")  # 别硬编码真名
 PWD = os.environ.get("HA_PWD", "")   # 必须通过环境变量/creds.json 提供，别硬编码
 CACHE = os.path.expanduser("~/.config/ha/creds.json")
 CLIENT_ID = BASE + "/"
