@@ -1,6 +1,6 @@
 # 🎮 星露谷风 Home Assistant 面板 + 小米摄像头实时流
 
-把家里的 **Home Assistant** 面板做成《星露谷物语》的游戏界面，并把**米家云摄像头**接成真正的实时画面（不是那种「上次有人经过时的截图」）。
+把家里的 **Home Assistant** 面板做成《星露谷物语》的游戏界面，并把**米家云摄像头**接成真正的实时画面。
 
 > 全部在 NAS 上无头完成：NAS 跑一个 HAOS 虚拟机，脚本通过 HA 的 WebSocket/REST API + Chrome DevTools Protocol 改配置、改皮肤、截图自检 —— 全程不用打开浏览器点来点去。
 
