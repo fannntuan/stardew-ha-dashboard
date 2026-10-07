@@ -102,9 +102,29 @@ python3 scripts/ha_shot.py home-control/main /tmp/panel.png 1536 900 desktop
 
 ---
 
-## ⚖️ 许可 / 免责
+## ⚖️ 免责声明 / Disclaimer
 
-- 本仓库的**代码、主题、自绘像素图标**：可自由使用/修改（建议注明出处）。
-- **未随仓库分发任何《星露谷物语》游戏素材**（仅截图里出现）；想要原版素材请自行从游戏/百科获取，版权归原作者 ConcernedApe。
-- 截图中的家庭设备名称/布局为演示用途。
-- 所有账号、密码、token、内网地址在仓库中均为占位符（`${HA_PWD}`、`${NAS_IP}` 等）。
+### 中文
+
+- 本项目是**个人自用的非官方粉丝作品**，与《星露谷物语》(Stardew Valley) 的开发者 **ConcernedApe** 及其发行方**没有任何关联**，也未获得其授权、赞助或认可。
+- *Stardew Valley*、《星露谷物语》及相关名称、角色、音乐、美术素材的**著作权与商标权均归 ConcernedApe 所有**。
+- **本仓库不包含任何从游戏中提取的原始素材文件**：`assets/icons/` 的像素图标与木牌/木箱/羊皮纸等界面素材，全部由 `scripts/gen_game_icons.py`、`scripts/gen_ui_assets.py` **程序化自绘生成**，只是在风格上致敬原游戏的像素/木质 UI；截图里的"游戏感"界面同样是这些自绘素材 + CSS 拼出来的。
+- 本项目**仅供个人学习与技术交流，请勿用于商业用途**。如需商用，请自行替换全部美术素材、字体与命名，并自行承担相应法律责任。
+- 本项目也**不是 Home Assistant 或米家(小米) 的官方项目**，相关名称与商标归各自所有者。
+- 面板使用的像素字体为 **方舟像素字体 (Fusion Pixel)**，按 **SIL Open Font License 1.1 (OFL)** 使用（本仓库未随附字体文件）。
+- 仓库未附加开源许可证文件，默认**保留所有权利**；`scripts/` 与自绘素材可自由参考/取用（建议注明出处），整仓库转载请先联系作者。
+- 预览截图中的**摄像头实时画面**与**扫地机户型图**已打码；仓库内所有账号、密码、token、内网地址、设备序列号均为 `${...}` 占位符（`${HA_PWD}`、`${NAS_IP}` 等），请自行填入自己的环境。
+
+### English
+
+This is an **unofficial, personal fan project**. It is **not affiliated with, authorized, sponsored or endorsed by ConcernedApe** (creator of *Stardew Valley*) or its publishers. *Stardew Valley* and all related names, characters, music and artwork are the property of ConcernedApe.
+
+**No original game assets are distributed in this repository.** Every sprite under `assets/icons/` and all wood/parchment UI assets are **generated programmatically by the scripts included here** (`gen_game_icons.py`, `gen_ui_assets.py`) — they only pay tribute to the game's pixel-art style. The screenshots likewise contain nothing but these self-drawn assets plus CSS.
+
+This project is for **personal, non-commercial and educational use only**. For commercial use, replace every piece of artwork, font and naming yourself and bear the legal consequences. It is **not** an official project of Home Assistant or Mi Home / Xiaomi either.
+
+The pixel font used by the dashboard is **Fusion Pixel (方舟像素字体)**, licensed under the **SIL Open Font License 1.1** (not bundled here).
+
+No open-source license file is attached: all rights reserved by default. You are free to reference/adapt the scripts and self-drawn assets with attribution; please contact the author before reposting the whole repository.
+
+Camera feeds and the robot-vacuum floor plan in the preview screenshots are masked. Every credential, token and inner-network address in this repo is a `${...}` placeholder.

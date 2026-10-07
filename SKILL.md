@@ -234,8 +234,11 @@ ffprobe -v error -rtsp_transport tcp -show_entries stream=codec_name,width,heigh
 python3 scripts/vm_snap.py full "2026-10-06 面板+摄像头"
 ```
 
-## 8. 许可
+## 8. 免责声明（完整版见 README.md）
 
-- 本技能/仓库的代码、主题、**自绘像素图标**可自由使用（建议注明出处）。
-- **不分发任何《星露谷物语》游戏素材**；主题里的调色/风格为自绘复刻，版权归原作者 ConcernedApe。
-- 所有凭据、token、内网地址在示例里均为占位符（`${HA_PWD}`、`${NAS_IP}`、`${XIAOMI_UID}` …）——**别把真密码写进脚本**。
+- **非官方粉丝作品**：本项目与《星露谷物语》(Stardew Valley) 的开发者 **ConcernedApe** 及其发行方无任何关联，未获授权/赞助/认可；相关名称、角色、音乐、美术素材的著作权与商标权归 ConcernedApe 所有。
+- **不分发任何游戏原始素材**：`assets/icons/` 与木牌/木箱/羊皮纸素材由 `scripts/gen_game_icons.py`、`scripts/gen_ui_assets.py` **程序化自绘生成**，仅风格致敬原游戏的像素/木质 UI。
+- **仅供个人学习与技术交流，禁止商用**；商用请自行替换全部美术素材、字体与命名并自担法律责任。本项目也不是 HA / 米家的官方项目。
+- 像素字体为 **方舟像素字体 (Fusion Pixel)**，遵循 **OFL 1.1**（仓库未随附字体文件）。
+- 仓库未附开源许可证文件 → 默认保留所有权利；`scripts/` 与自绘素材可自由参考取用（建议注明出处），整仓库转载请联系作者。
+- 所有凭据、token、内网地址、设备序列号在示例里均为占位符（`${HA_PWD}`、`${NAS_IP}`、`${XIAOMI_UID}`、`${PRINTER_SERIAL}` …）——**别把真密码写进脚本**；预览截图中摄像头画面与户型图已打码。
